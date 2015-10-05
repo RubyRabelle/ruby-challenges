@@ -1,0 +1,778 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"test",
+				"test_str"
+			],
+			[
+				"bp",
+				"bp_content"
+			],
+			[
+				"get",
+				"get_input"
+			],
+			[
+				"pu",
+				"publish_blog"
+			],
+			[
+				"blog",
+				"blog_hash"
+			],
+			[
+				"curr",
+				"current_blog_post"
+			],
+			[
+				"to",
+				"to_s"
+			],
+			[
+				"str",
+				"str_date"
+			],
+			[
+				"au",
+				"author_name"
+			],
+			[
+				"fav_books",
+				"fav_books_movies"
+			],
+			[
+				"fav_book",
+				"fav_books_movies"
+			],
+			[
+				"o",
+				"owner_name"
+			],
+			[
+				"publish",
+				"publish_blog"
+			],
+			[
+				"save",
+				"save_blog"
+			],
+			[
+				"my",
+				"my_blog"
+			],
+			[
+				"blo",
+				"blogger_name"
+			],
+			[
+				"the",
+				"the_blog"
+			],
+			[
+				"num",
+				"num_of_posts"
+			],
+			[
+				"cla",
+				"cla	class .. < ParentClass .. initialize .. end"
+			],
+			[
+				"p",
+				"pet_name"
+			],
+			[
+				"cl",
+				"cla	class .. < ParentClass .. initialize .. end"
+			],
+			[
+				"method",
+				"method_variable"
+			],
+			[
+				"play",
+				"play_again"
+			],
+			[
+				"pla",
+				"play_again"
+			],
+			[
+				"pr",
+				"prt_string"
+			],
+			[
+				"check",
+				"check_magic_number"
+			],
+			[
+				"gre",
+				"greet_user"
+			],
+			[
+				"alwa",
+				"always_3"
+			],
+			[
+				"second",
+				"second_magic_number"
+			],
+			[
+				"thir",
+				"third_magic_number"
+			],
+			[
+				"se",
+				"second_magic_number"
+			],
+			[
+				"first",
+				"first_magic_number"
+			],
+			[
+				"if",
+				"ife	if … else … end"
+			],
+			[
+				"temp",
+				"temp_magic_number"
+			],
+			[
+				"pass",
+				"pass_number"
+			],
+			[
+				"add",
+				"add_number"
+			],
+			[
+				"ne",
+				"new_magic_number"
+			],
+			[
+				"magic",
+				"magic_number"
+			],
+			[
+				"magi",
+				"magic_number"
+			],
+			[
+				"mag",
+				"magic_number"
+			],
+			[
+				"arr",
+				"arr_birthdate"
+			],
+			[
+				"case",
+				"case_statement"
+			],
+			[
+				"y",
+				"Y"
+			],
+			[
+				"final",
+				"final_num"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "love.rb",
+			"settings":
+			{
+				"buffer_size": 337,
+				"line_ending": "Windows",
+				"name": "love.rb"
+			}
+		},
+		{
+			"file": "fizzbuzz.rb",
+			"settings":
+			{
+				"buffer_size": 251,
+				"line_ending": "Windows",
+				"name": "fizzbuzz.rb"
+			}
+		},
+		{
+			"contents": "#numerology2.rb  9/20/2015 Rabelle.Rouser\n\n#SkillCrush Numerology app2\n\n\ndef get_birthdate\n	#ask user for birthdate mmddyyyy, return string\n	puts \"What is your birthdate in MMDDYYYY format?\"\n	str_birthdate = gets\nend\n\n\ndef run_magic_on_number(str_number)\n	#build an array, add birthdate numbers together\n	i = 0\n	temp_magic_number = 0\n	num = str_number.length\n	while i < num do\n		#puts \"Pass #{i} : the string is #{str_number} and the number is #{str_number[i]}\"\n		temp_magic_number += str_number[i].to_i\n		i += 1\n		#puts \"The first magic number is :#{first_magic_number}\"\n		magic_number = temp_magic_number\n	end\n	#puts \"temp_magic_number = #{magic_number}\"\n	check_magic_number (magic_number)\nend\n\ndef check_magic_number(magic_number)\n	#check to see if the number needs to be reduced again\n	if magic_number > 9\n		#puts \"magic number is too high, lets reduce it\"\n		run_magic_on_number(magic_number.to_s)\n	else\n		display_numerology_message(magic_number)\n	end\nend\n\n\ndef display_numerology_message (the_number)\n	puts \"Number #{the_number}\"\n	\n	puts case the_number\n	when 1 \n	\"One is the leader. The number one indicates the ability to stand alone, and is a strong vibration. Ruled by the Sun.\"\n\n	when 2 \n	\"This is the mediator and peace-lover. The number two indicates the desire for harmony. It is a gentle, considerate, and sensitive vibration. Ruled by the Moon.\"\n\n	when  3 \n	\"Number Three is a sociable, friendly, and outgoing vibration. Kind, positive, and optimistic, Three’s enjoy life and have a good sense of humor. Ruled by Jupiter.\"\n\n	when 4 \n	\"This is the worker. Practical, with a love of detail, Fours are trustworthy, hard-working, and helpful. Ruled by Uranus.\"\n\n	when 5 \n	\"This is the freedom lover. The number five is an intellectual vibration. These are ‘idea’ people with a love of variety and the ability to adapt to most situations. Ruled by Mercury.\"\n\n	when 6 \n	\"This is the peace lover. The number six is a loving, stable, and harmonious vibration. Ruled by Venus.\"\n\n	when 7 \n	\"This is the deep thinker. The number seven is a spiritual vibration. These people are not very attached to material things, are introspective, and generally quiet. Ruled by Neptune.\"\n\n	when 8 \n	\"This is the manager. Number Eight is a strong, successful, and material vibration. Ruled by Saturn.\"\n\n	when 9 \n	\"This is the teacher. Number Nine is a tolerant, somewhat impractical, and sympathetic vibration. Ruled by Mars.\"\n		\n	end\nplay_again{run_magic_on_number(get_birthdate)}\nend\n\ndef play_again\n	puts \"Do you want to play again? Y/N\"\n	playtime = gets.downcase.chomp\n	if playtime == 'y'\n		puts \"lets play again!\"\n		yield\n	else\n		puts \"goodbye\"\n	end\nend\n\nrun_magic_on_number(get_birthdate)\n\n\n\n\n\n\n\n",
+			"file": "numerology2.rb",
+			"file_size": 2789,
+			"file_write_time": 130873635376364239,
+			"settings":
+			{
+				"buffer_size": 2692,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "oop2.rb",
+			"settings":
+			{
+				"buffer_size": 731,
+				"line_ending": "Windows",
+				"name": "oop.rb"
+			}
+		},
+		{
+			"contents": "> fav_foods = ['peanut butter', 'avocado', 'bacon']\n => [\"peanut butter\", \"avocado\", \"bacon\"]\n\nYou are REALLY getting the hang of this Ruby thing!\nUse the count method to count the number of elements in your new array:\n\n> fav_foods.count\n1\n	\n> fav_foods.count\nUse fetch to grab the first element of your array (your MOST favorite food), and assign that to a new variable:\n\n> most_fav_food = fav_foods.fetch(0)\n1\n	\n> most_fav_food = fav_foods.fetch(0)\nNow create another array containing three of your most favorite things EVER. This array can contain anything at all.\n1\n	\n> fav_things = ['naps', 'kittens', 'mom']\nWait! That list is missing your most favorite food! Add it to this new array using the variable you created and the push method:\n\n> fav_things.push(most_fav_food)\n1\n	\n> fav_things.push(most_fav_food)\nTidy up your fav_things array using the sort method:\n\n> fav_things = fav_things.sort\n1\n	\n> fav_things = fav_things.sort\nSuddenly you realize that you’ve made a terrible terrible mistake and you actually HATE naps! You can just use the delete method to remove naps from your array:\n\n> fav_things.delete('naps')\n1\n	\n> fav_things.delete('naps')\nThis array is no fun to look at as is. Create a sentence that states what your favorite three thing are.\n\nYou’ll first need to create a string out of your array using join:\n    1\n    	\n    > fav_things_str = fav_things.join(', ')\n\n    And now build your sentence. Remember your string and variable best practices!\n    > puts \"My favorite things EVER, in alphabetical order, are: #{fav_things_str}.\"\n    1\n    	\n    > puts \"My favorite things EVER, in alphabetical order, are: #{fav_things_str}.\"\n\nNow it’s time for a little bit of hash fun.\n\n    Create a new hash that contains some of your favorite books and movies:\n\n    > fav_books_movies = {\"books\" => [\"Goodnight Moon\", \"Oh, The Places You'll Go!\"], \"movies\" => [\"Amelie\", \"Lost In Translation\", \"My Neighbor Totoro\"]}\n     => {\"books\"=>[\"Goodnight Moon\", \"Oh, The Places You'll Go!\"], \"movies\"=>[\"Amelie\", \"Lost In Translation\", \"My Neighbor Totoro\"]}\n    1\n    2\n    	\n    > fav_books_movies = {\"books\" => [\"Goodnight Moon\", \"Oh, The Places You'll Go!\"], \"movies\" => [\"Amelie\", \"Lost In Translation\", \"My Neighbor Totoro\"]}\n     => {\"books\"=>[\"Goodnight Moon\", \"Oh, The Places You'll Go!\"], \"movies\"=>[\"Amelie\", \"Lost In Translation\", \"My Neighbor Totoro\"]}\n    Now, split your hash into two arrays: one for books and one for movies. For this you’ll need to use the fetch method twice:\n\n    > fav_books = fav_books_movies.fetch('books')\n     => [\"Goodnight Moon\", \"Oh, The Places You'll Go!\"]\n    > fav_movies = fav_books_movies.fetch('movies')\n     => [\"Amelie\", \"Lost In Translation\", \"My Neighbor Totoro\"]\n    1\n    2\n    3\n    4\n    	\n    > fav_books = fav_books_movies.fetch('books')\n     => [\"Goodnight Moon\", \"Oh, The Places You'll Go!\"]\n    > fav_movies = fav_books_movies.fetch('movies')\n     => [\"Amelie\", \"Lost In Translation\", \"My Neighbor Totoro\"]\n    Okay! Now, create two sentences that state your favorite books and movies. You need to convert the two arrays to strings, just like you did earlier, using join:\n    > fav_books_str = fav_books.join(', ')\n     => \"Goodnight Moon, Oh, The Places You'll Go!\" \n    > fav_movies_str = fav_movies.join(', ')\n     => \"Amelie, Lost In Translation, My Neighbor Totoro\" \n    1\n    2\n    3\n    4\n    	\n    > fav_books_str = fav_books.join(', ')\n     => \"Goodnight Moon, Oh, The Places You'll Go!\" \n    > fav_movies_str = fav_movies.join(', ')\n     => \"Amelie, Lost In Translation, My Neighbor Totoro\" \n    Finally, build your sentences. Add a newline between your two sentences too, because you are THAT good already.\n\n    > puts \"My favorite books are: #{fav_books_str}.\\nMy favorite movies are: #{fav_movies_str}.\"\n    1\n    	\n    > puts \"My favorite books are: #{fav_books_str}.\\nMy favorite movies are: #{fav_movies_str}.\"\n\nWhen you’re finished, take a screenshot of all your work in terminal and upload below.\n",
+			"settings":
+			{
+				"buffer_size": 3982,
+				"line_ending": "Windows",
+				"name": "> fav_foods = ['peanut butter', 'avocado', 'bacon'"
+			}
+		},
+		{
+			"contents": "#hash_practice.rb\n\n# comment out the standard hash\n=begin\nfav_books_movies = {\n#	\"books\" => [\"Goodnight Moon\", \"Oh, The Places You'll Go!\"], \n#	\"movies\" => [\"Amelie\", \"Lost In Translation\", \"My Neighbor Totoro\"]\n}\n\nfav_books = fav_books_movies.fetch('books')\nfav_movies = fav_books_movies.fetch('movies')\n\nfav_books_str = fav_books.join(', ')\nfav_movies_str = fav_movies.join(', ')\n\n\nputs \"My favorite books are: #{fav_books_str}.\\nMy favorite movies are: #{fav_movies_str}.\"\n=end\n\n# using symbols for hash\n=begin\nfav_books_movies = {\n  :books => [\"Goodnight Moon\", \"Oh, The Places You'll Go!\"], \n  :movies => [\"Amelie\", \"Lost In Translation\", \"My Neighbor Totoro\"]\n}\n\nfav_books = fav_books_movies.fetch(:books)\nfav_movies = fav_books_movies.fetch(:movies)\n\nfav_books_str = fav_books.join(', ')\nfav_movies_str = fav_movies.join(', ')\n\n\nputs \"My favorite books are: #{fav_books_str}.\\nMy favorite movies are: #{fav_movies_str}.\"\n=end\n\nfav_books_movies = {\n  books: [\"Goodnight Moon\", \"Oh, The Places You'll Go!\"], \n  movies: [\"Amelie\", \"Lost In Translation\", \"My Neighbor Totoro\"]\n}\n\nputs fav_books_movies\nfav_books_movies[:books] << \"twilight\"\nputs \"new hash #{fav_books_movies}\"\n\n#hash[:a] = 'a'\n#new_hash = {books: \"twilight\", movies: \"twilight\"}\n#fav_books_movies.merge!(books: \"twilight\", movies: \"twilight\")\n\nputs fav_books_movies.values\n#puts new_hash.values\n\nfav_books = fav_books_movies.fetch(:books)\nfav_movies = fav_books_movies.fetch(:movies)\n\nfav_books_str = fav_books.join(', ')\nfav_movies_str = fav_movies.join(', ')\n\n\nputs \"My favorite books are: #{fav_books_str}.\\nMy favorite movies are: #{fav_movies_str}.\"\n\n\n\n\n",
+			"file": "hash_practice.rb",
+			"file_size": 1691,
+			"file_write_time": 130881090109168749,
+			"settings":
+			{
+				"buffer_size": 1629,
+				"line_ending": "Windows",
+				"name": "hash_practice.rb"
+			}
+		},
+		{
+			"file": "hash_blog.rb",
+			"settings":
+			{
+				"buffer_size": 1242,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog_workingversion.rb",
+			"settings":
+			{
+				"buffer_size": 2027,
+				"line_ending": "Windows",
+				"name": "blog.rb"
+			}
+		},
+		{
+			"contents": "# blog.rb\n\nclass Blog \n	@@num_posts= 0\n	@@the_blog = []	\n\n	def get_input(input_str)\n		puts input_str\n		return_value = gets.chomp\n	end\n\n  def publish_blog\n		@@the_blog.each do |thehash|\n		  puts \"\\nTitle: #{thehash.fetch(:title)}\"\n		  puts \"Entry: #{thehash.fetch(:content)}\"\n		  puts \"by #{thehash.fetch(:author_name)} on #{thehash.fetch(:p_date)}\"\n		end\n	end\n\n	def test_user(test_str, true_val)\n		puts test_str\n		gets.downcase.chomp == true_val ? true : false\n	end\n\n	def save_blog (blog_hash)  \n		@@the_blog[@@num_posts] = blog_hash\n		@@num_posts += 1  #increment the number of posts\n		test_user('Would you like to make another entry? Y/N', 'y') ? runblog : publish_blog\n	end\n\nend\n\nclass BlogPost < Blog\n	attr_accessor :author, :title, :content, :pub_date, :blog_post\n\n	def initialize\n		@author = get_input(\"What is your name?\") \n		@title = get_input(\"Enter your Blog Title:\")\n		@content = get_input(\"Enter your blog post now:\")	\n		@pub_date = Time.now.to_s\n			5.times do @pub_date.chop! end\n\n		@blog_post = {\n			title: @title,\n			content: @content,\n			p_date: @pub_date,\n			author_name: @author\n		}\n		self.save_blog(@blog_post)\n	end\n\nend\n\ndef runblog\n	my_blog = BlogPost.new\n  puts my_blog.inspect\nend\n\nrunblog\n\n",
+			"file": "hash_blog2.rb",
+			"file_size": 1275,
+			"file_write_time": 130881384479861705,
+			"settings":
+			{
+				"buffer_size": 1214,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "# blog3.rb\nclass Blog\n\nend\n\n\nclass BlogPost < Blog\n	def BlogPost.write_new_post\n		this_post = self.new \n		puts \"enter title\"\n		this_post.set_bp_title = gets.chomp\n		puts \"enter content\"\n		this_post.set_bp_content = gets.chomp\n		this_post.set_bp_publish_date = Time.now\n\n	end\n\n	def bp_title\n		@bp_title\n	end\n	def set_bp_title=(bp_title)\n		@bp_title = bp_title\n	end\n	def bp_content\n		@bp_content\n	end\n	def set_bp_content= (bp_content)\n		@bp_content = bp_content\n\n	def bp_publish_date\n		@bp_publish_date\n 	end	\n 	def set_bp_publish_date= (bp_publish_date)\n 		@bp_publish_date = bp_publish_date\n 	end\n	\nend",
+			"file": "blog3.rb",
+			"file_size": 10,
+			"file_write_time": 130880282601738820,
+			"settings":
+			{
+				"buffer_size": 602,
+				"line_ending": "Windows",
+				"name": "blog3.rb"
+			}
+		},
+		{
+			"file": "newblog.rb",
+			"settings":
+			{
+				"buffer_size": 1335,
+				"line_ending": "Windows",
+				"name": "class Blog"
+			}
+		},
+		{
+			"file": "ferret.rb",
+			"settings":
+			{
+				"buffer_size": 1378,
+				"line_ending": "Windows",
+				"name": "class ferret"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Set Syntax: R Console"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Users/Mom/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/D/Users/Mom/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/D/Users/Mom/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Users/Mom/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/D/Users/Mom/sites/ruby/ruby_challenges/my_method2.rb",
+		"/D/Users/Mom/sites/ruby/ruby_challenges/method_from_method.rb",
+		"/D/Users/Mom/sites/ruby/ruby_challenges/always_3_method.rb",
+		"/D/Users/Mom/sites/ruby/ruby_challenges/case_statement.rb",
+		"/D/Users/Mom/sites/ruby/ruby_challenges/numerology2.rb",
+		"/D/Users/Mom/sites/ruby/ruby_challenges/first_script.rb",
+		"/D/Users/Mom/sites/ruby/ruby_challenges/always_three.rb",
+		"/D/Users/Mom/sites/ruby/ruby_challenges/else_if.rb",
+		"/D/Users/Mom/first_script.rb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"indent",
+			"tab",
+			"cat"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"lizard"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 8,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "love.rb",
+					"settings":
+					{
+						"buffer_size": 337,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								332,
+								332
+							]
+						],
+						"settings":
+						{
+							"auto_name": "love.rb",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "fizzbuzz.rb",
+					"settings":
+					{
+						"buffer_size": 251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								250
+							]
+						],
+						"settings":
+						{
+							"auto_name": "fizzbuzz.rb",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "numerology2.rb",
+					"settings":
+					{
+						"buffer_size": 2692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2493,
+								2644
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "oop2.rb",
+					"settings":
+					{
+						"buffer_size": 731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10,
+								729
+							]
+						],
+						"settings":
+						{
+							"auto_name": "oop.rb",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 251.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 3982,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3982,
+								3982
+							]
+						],
+						"settings":
+						{
+							"auto_name": "> fav_foods = ['peanut butter', 'avocado', 'bacon'",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1440.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "hash_practice.rb",
+					"settings":
+					{
+						"buffer_size": 1629,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								934,
+								1530
+							]
+						],
+						"settings":
+						{
+							"auto_name": "hash_practice.rb",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 583.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "hash_blog.rb",
+					"settings":
+					{
+						"buffer_size": 1242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								631,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "blog_workingversion.rb",
+					"settings":
+					{
+						"buffer_size": 2027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								871,
+								871
+							]
+						],
+						"settings":
+						{
+							"auto_name": "blog.rb",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 321.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "hash_blog2.rb",
+					"settings":
+					{
+						"buffer_size": 1214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								671,
+								671
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "blog3.rb",
+					"settings":
+					{
+						"buffer_size": 602,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								268,
+								268
+							]
+						],
+						"settings":
+						{
+							"auto_name": "blog3.rb",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 56.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "newblog.rb",
+					"settings":
+					{
+						"buffer_size": 1335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1037,
+								1037
+							]
+						],
+						"settings":
+						{
+							"auto_name": "class Blog",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 704.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "ferret.rb",
+					"settings":
+					{
+						"buffer_size": 1378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1378,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "class ferret",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
